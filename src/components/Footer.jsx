@@ -1,12 +1,14 @@
 import React from "react";
+import '../assets/style/Footer.css';
 
 export const Footer = () => (
     <footer>
-        <div className="container">
+      <section className="section-footer">
+      <div className="container">
         <div className="grid">
           <div className="grid-item  width-1-2-md width-1-4-lg">
             <section className="footer-info">
-                <h2>Your friendly cinema</h2>
+                <h2 className="section-title">Your friendly cinema</h2>
               <p className="section-description">
                 eusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -19,9 +21,9 @@ export const Footer = () => (
               <h4 className="section-title">Subscribe</h4>
               <div className="form-control">
                 <input type="text" className="input-footer" />
-                <span className="icon-flip"
-                  ><i className="icon-shape_5" aria-hidden="true"></i
-                ></span>
+                <span className="icon-flip">
+                  <i className="icon-shape_5" aria-hidden="true"></i>
+                </span>
               </div>
               <p className="section-description">
                 eusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -55,5 +57,6 @@ export const Footer = () => (
           </div>
         </div>
       </div>
+      </section>
     </footer>
 );

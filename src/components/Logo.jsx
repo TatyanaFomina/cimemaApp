@@ -1,8 +1,9 @@
 import React from 'react';
+import '../assets/style/Logo.css';
+import mainLogo from "../assets/images/filmhouse-logo.png"
 
 
 
 export const Logo =()=> (
-  //  <img className="logo" src="../assets/images/filmenhouse-logo.png"></img>
-  <div></div>
-  );
+  <a href="#"><img className="logo" src={mainLogo} alt="img" /></a>
+);

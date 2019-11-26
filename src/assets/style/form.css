@@ -1,0 +1,103 @@
+.textarea,
+.input {
+  resize: none;
+  font-size: 13px;
+  font-weight: 400;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  padding: 21px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.textarea::placeholder,
+.input::placeholder {
+  color: rgba(91, 100, 110, 0.5);
+}
+
+.form-control {
+  position: relative;
+}
+
+.form-title {
+  color: #062033;
+}
+
+.form-contacts {
+  text-align: center;
+}
+
+.form-contacts .contacts-description {
+  font-size: 13px;
+  padding-top: 30px;
+  line-height: 2;
+}
+
+.form-contacts .contacts-title {
+  font-weight: 400;
+}
+
+.input-footer {
+  width: 100%;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  border-radius: 5px;
+  height: 46px;
+  padding: 0 15px;
+  color: #ffffff;
+}
+
+.icon-flip {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.icon-flip ~ .input-footer {
+  padding-right: 50px;
+  right: 5px;
+}
+
+.form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-discuss .form-control {
+  padding: 5px 10px;
+}
+
+input:disabled,
+.textarea:disabled,
+.input-footer:disabled {
+  background-color: transparent;
+  color: black;
+  border-color: red;
+}
+
+.input:focus,
+.textarea:focus,
+.input-footer:focus {
+  outline: none;
+  border-color: #0eb493;
+}
+
+@media (min-width: 640px) {
+  .form-contacts {
+    text-align: left;
+  }
+}

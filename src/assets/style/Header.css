@@ -1,0 +1,148 @@
+.section-title {
+  text-align: center;
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+  color: #0eb493;
+  font-weight: 400;
+  padding-top: 100px;
+}
+
+.section-subtitle {
+  margin-top: 36px;
+}
+
+.section-description {
+  text-align: center;
+}
+
+.section-title-decore-dark {
+  text-align: center;
+  margin: 20px 0 36px;
+  display: block;
+}
+
+.section-title-decore-dark::before,
+.section-title-decore-dark::after {
+  content: " ";
+  display: inline-block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  width: 90px;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+}
+.section-title-decore-light {
+  text-align: center;
+  margin: 20px 0 36px;
+  display: block;
+}
+
+.section-title-decore-light::before,
+.section-title-decore-light::after {
+  content: " ";
+  display: inline-block;
+  border-bottom: 1px solid rgba(6, 32, 51, 0.1);
+  width: 90px;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+.section-hero {
+  position: relative;
+  color: white;
+}
+
+.section-hero .section-title {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.section-hero .section-subtitle {
+  padding-top: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.section-hero-top {
+  position: relative;
+}
+
+.section-hero-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 150px;
+}
+
+.section-hero .section-description {
+  padding-bottom: 100px;
+}
+
+.section-hero .section-description::before,
+.section-hero .section-description::after {
+  content: " ";
+  display: inline-block;
+  border: 1px solid #0feb9e;
+  width: 10px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.section-hero .socials {
+  padding-bottom: 35px;
+  font-size: 20px;
+}
+
+.section-hero .socials a {
+  margin: 0 5px;
+  opacity: 0.3;
+}
+
+.section-background {
+  z-index: -2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.section-background img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.section-overlay {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+.section-overlay-1 {
+  background: rgba(13, 36, 26, 0.4);
+}
+
+.section-overlay-2 {
+  background: rgba(6, 32, 51, 0.8);
+}

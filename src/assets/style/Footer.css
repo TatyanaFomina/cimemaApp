@@ -1,0 +1,133 @@
+.section-footer {
+  background-color: rgba(37, 203, 168, 0.9);
+  font-size: 13px;
+  border-top: 2px solid #062033;
+  padding: 0 20px;
+}
+
+.section-footer .section-title {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: none;
+  padding: 0 0 10px;
+  text-align: left;
+}
+
+.section-footer .section-copyright {
+  font-size: 13px;
+  color: white;
+}
+
+.section-footer .copyright {
+  margin-top: 60px;
+  color: #062033;
+  text-align: center;
+}
+
+.section-footer .design {
+  border-left: 1px solid rgba(6, 32, 51, 0.3);
+  padding-left: 10px;
+}
+
+.section-footer .design i {
+  font-size: 15px;
+  color: rgba(6, 32, 51, 0.8);
+}
+
+.section-footer .logo {
+  margin-bottom: 44px !important;
+}
+
+.section-subscribe .section-description {
+  padding-top: 20px;
+}
+
+.section-footer .section-description {
+  text-align: left;
+  line-height: 2;
+}
+
+.section-footer .footer-info {
+  padding-top: 100px;
+}
+
+.list-footer {
+  line-height: 2.5;
+}
+
+.list-footer a:hover {
+  color: #0eb493;
+}
+.section-footer.grid {
+  padding: 5px 10px;
+}
+
+.input-footer {
+  width: 100%;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  border-radius: 5px;
+  height: 46px;
+  padding: 0 15px;
+  color: #ffffff;
+}
+
+.icon-flip {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.icon-flip ~ .input-footer {
+  padding-right: 50px;
+  right: 5px;
+}
+@media (min-width: 640px) {
+  .section-hero .section-description::before,
+  .section-hero .section-description::after {
+    content: " ";
+    display: inline-block;
+    width: 28px;
+    margin: 0 20px;
+  }
+  .section-maps img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .section-footer .section-title {
+    padding: 0 0 46px;
+  }
+  .section-footer .section-subscribe {
+    padding-top: 100px;
+  }
+  .section-footer .section-copyright {
+    padding-top: 84px;
+  }
+  .section-footer {
+    padding-bottom: 70px;
+  }
+  .section-footer .copyright {
+    text-align: left;
+  }
+}
+
+@media (min-width: 960px) {
+  .section-footer .section-explore {
+    padding-top: 100px;
+  }
+  .section-footer .section-copyright {
+    padding-top: 170px;
+  }
+}

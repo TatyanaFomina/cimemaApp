@@ -1,0 +1,61 @@
+.grid {
+  margin: 0 -10px;
+}
+
+.grid > * {
+  padding: 20px 10px;
+}
+
+.grid-reset {
+  margin: 0;
+}
+
+.grid-reset > * {
+  padding: 0;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .grid > * {
+    padding: 0 10px;
+  }
+  .grid-reset {
+    margin: 0;
+  }
+
+  .grid-reset > * {
+    padding: 0;
+  }
+
+  .section-features .grid {
+    padding: 0 0 100px;
+  }
+
+  .section-team .grid {
+    padding: 40px 0 100px;
+  }
+
+  .section-facts .grid {
+    padding: 0 0 100px;
+  }
+  .section-facts .grid > * {
+    padding-top: 20px;
+  }
+  .section-discuss .grid {
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 960px) {
+  .grid {
+    margin: 0 -10px;
+  }
+}
