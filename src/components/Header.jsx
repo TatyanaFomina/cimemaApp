@@ -17,7 +17,7 @@ export const Header =() => (
            <section className="section-hero-top">
            <section className="section-overlay section-overlay-1"></section>
            <div className="container container-header">
-           <section class="nav-logo">
+           <section className="nav-logo">
            <Logo />
             <Nav />
             </section>

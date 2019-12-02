@@ -14,7 +14,7 @@ html {
 .container {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 15px;
   overflow: hidden;
@@ -22,10 +22,6 @@ html {
 
 body {
   margin: 0;
-}
-
-figure {
-  margin: 0 !important;
 }
 
 p,
@@ -96,47 +92,7 @@ a:hover,
 img {
   width: 100%;
   object-fit: cover;
-  height: auto;
-}
-
-.image-border-sm {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid #898989;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.image-border-lg {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.border-green {
-  border: 1px solid #0eb493;
-}
-
-.border-white {
-  border: 1px solid #ffffff;
+  height: 600px;
 }
 
 .unbold {

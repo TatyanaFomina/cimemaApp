@@ -1,0 +1,23 @@
+.button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.button-controller {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button a {
+  color: #000000;
+  font-weight: 400;
+}
+
+.button i {
+  color: #0eb493;
+}
+
+.button a:hover {
+  color: #0eb493;
+}
