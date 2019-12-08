@@ -14,6 +14,15 @@ html {
 .container {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+.section-footer .container {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 15px;
@@ -22,6 +31,7 @@ html {
 
 body {
   margin: 0;
+  position: relative;
 }
 
 p,
@@ -107,28 +117,23 @@ img {
   color: #062033;
 }
 
-@media (min-width: 640) {
-  html {
-    font-size: 18px;
-  }
+iframe {
+  width: 100%;
+  height: 300px;
+  border: 3px solid rgba(107, 107, 212, 0.4);
+}
 
-  h1 {
-    font-size: 62px;
-  }
+.loader {
+  border: 10px solid #f3f3f3; 
+  border-top: 10px solid #4ec98f; 
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
 
-  h2 {
-    font-size: 48px;
-  }
-
-  h3 {
-    font-size: 28px;
-  }
-
-  h4 {
-    font-size: 24px;
-  }
-
-  h5 {
-    font-size: 20px;
-  }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

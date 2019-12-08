@@ -1,12 +1,25 @@
 .button {
   border: none;
-  background-color: transparent;
-  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 18px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  color: white;
+  font-size: 20px;
+  background-color: #0eb493;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 1px solid #0eb493;
+  text-align: center;
 }
 
 .button-controller {
+  display: flex;
   text-align: center;
   margin-top: 20px;
+  justify-content: space-evenly;
 }
 
 .button a {
@@ -14,10 +27,22 @@
   font-weight: 400;
 }
 
-.button i {
-  color: #0eb493;
-}
 
 .button a:hover {
   color: #0eb493;
+}
+
+.button:hover {
+  background-color: transparent;
+  border: 1px solid #0eb493 ;
+  border-radius: 5px;
+  color: #062033;
+}
+
+.btn-cancel {
+  background-color: rgba(148, 132, 132, 0.897);
+}
+
+.btn-submit {
+  background-color: rgba(192, 229, 192, 0.856);
 }

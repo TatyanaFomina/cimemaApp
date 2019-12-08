@@ -10,7 +10,7 @@
 
 .card {
   position: relative;
-  text-align: center;
+  text-align: center; 
 }
 
 .card-title {
@@ -40,20 +40,70 @@
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
-  padding: 0 16px;
+  padding: 0 15px;
 }
 
 .card:hover .card-cover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 58px;
+  margin-bottom: 53px;
 }
 
 .card:hover .card-title {
   color: #0eb493;
 }
 
-.card-team .card-body {
+.card-body {
   margin-bottom: 0;
+  background-color: #ffffff;
+  padding: 5px 0;
+}
+
+.section-film-title {
+  text-align: center;
+}
+
+.card-list li {
+  margin: 20px 0;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.left-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-sessions .card-description{
+  padding: 40px 0;
+}
+
+.custom-select {
+  position: relative;
+  
+}
+
+.card-poster {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.card-name {
+  padding: 15px 0;
+}
+
+.card-films {
+  /* background: rgba(213, 227, 236, 0.4); */
+  background: rgba(255, 255, 255, 0.6);
+  margin: 50px 20px;
+  border-radius: 15px;
+}
+
+.session-info {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

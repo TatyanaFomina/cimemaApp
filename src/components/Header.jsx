@@ -3,12 +3,12 @@ import '../assets/style/Header.css';
 import heroBack from "../assets/images/hero.jpeg";
 
 import {Logo} from "./Logo";
-import {Nav} from "./Nav";
+import Nav from "./Nav";
 import {UserCard}  from "./User";
+
 
 export const Header =() => (
     <header>
-        <div>
           <section className="section-hero">
           <figure className="section-background">
             <img src={heroBack} alt="img" />
@@ -37,12 +37,10 @@ export const Header =() => (
               <a href="#"><i className="icon-twitter"></i></a>
               <a href="#"><i className="icon-facebook"></i></a>
               <a href="#"><i className="icon-google"></i></a>
-              <a href="#"><i className="icon-dribbble"></i></a>
             </div>
           </section>
             </div>
          </section>
          </section>
-        </div>
     </header>
 );

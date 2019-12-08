@@ -21,11 +21,16 @@
 }
 
 .nav-menu li a:hover {
-  border-bottom: 1px solid #32b0ee;
+  border-bottom: 3px solid #32b0ee;
+}
+
+.nav-menu li a.active {
+  border-bottom: 3px solid #32b0ee;
+  background: rgba(39, 223, 143, 0.4);
 }
 
 .nav-menu li a {
-  padding: 34px 0;
+  padding: 32px 0;
 }
 
 .nav-logo {

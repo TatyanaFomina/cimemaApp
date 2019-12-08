@@ -21,7 +21,7 @@ export const Footer = () => (
               <h4 className="section-title">Subscribe</h4>
               <div className="form-control">
                 <input type="text" className="input-footer" />
-                <span className="icon-flip">
+                <span className="icon-fl">
                   <i className="icon-shape_5" aria-hidden="true"></i>
                 </span>
               </div>

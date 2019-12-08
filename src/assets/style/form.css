@@ -6,38 +6,21 @@
   color: black;
   font-family: "Open Sans", sans-serif;
   width: 100%;
-  padding: 21px 15px;
+  padding: 10px 15px;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  cursor: pointer;
 }
 
 .textarea::placeholder,
 .input::placeholder {
-  color: rgba(91, 100, 110, 0.5);
+  color: rgba(91, 100, 110, 0.8);
 }
 
 .form-control {
   position: relative;
-}
-
-.form-title {
-  color: #062033;
-}
-
-.form-contacts {
-  text-align: center;
-}
-
-.form-contacts .contacts-description {
-  font-size: 13px;
-  padding-top: 30px;
-  line-height: 2;
-}
-
-.form-contacts .contacts-title {
-  font-weight: 400;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .input-footer {
@@ -48,6 +31,7 @@
   height: 46px;
   padding: 0 15px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .icon-flip {
@@ -61,24 +45,30 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 10px;
-  padding: 10px;
   font-size: 20px;
+  margin-right: 40px;
+  padding: 30px;
 }
 
-.icon-flip ~ .input-footer {
-  padding-right: 50px;
-  right: 5px;
+.icon-fl {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 20px;
+  margin-right: 25px;
 }
 
 .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.section-discuss .form-control {
-  padding: 5px 10px;
 }
 
 input:disabled,
@@ -96,8 +86,25 @@ input:disabled,
   border-color: #0eb493;
 }
 
-@media (min-width: 640px) {
-  .form-contacts {
-    text-align: left;
-  }
+.input-filter {
+  width: 30%;
+  justify-content: flex-end;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.input-filter:focus {
+  border-color: #2684FF;
+  box-shadow: 0 0 0 1px #2684FF;
+}
+
+.custom-select {
+  width: 30%;
+  margin: 0 10px;
+}
+
+.form-name {
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
 }

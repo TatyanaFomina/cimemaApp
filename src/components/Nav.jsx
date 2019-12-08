@@ -1,12 +1,17 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 import '../assets/style/Nav.css';
 
-export const Nav =()=>(
-    <div className="navigation">
+
+class Nav extends React.Component{
+    render() {
+        return(<div className="navigation">
         <ul className="list nav-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Details</a></li>
-            <li><a href="#">Schedule</a></li>
+            <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
+            <li><NavLink  exact to="/schedule" activeClassName="active">Schedule</NavLink></li>
         </ul>
-    </div>
-);
+    </div>);
+    }
+}
+
+export default Nav;
