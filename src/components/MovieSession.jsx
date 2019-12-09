@@ -7,8 +7,8 @@ export const MovieSession = ({session}) => {
     const [showModal, setShowModal] = useState(false);
 
 
-    const handleClickBuy = () => {
-       setShowModal(true);
+    const handleShowModal = () => {
+       setShowModal(!showModal);
    };
    
     return(
@@ -17,7 +17,7 @@ export const MovieSession = ({session}) => {
         <div className="grid-item left-card width-1-3">
         <div>
         <img src={session.movie.poster} alt="poster" className="card-poster"/>
-        <div className="button" onClick={handleClickBuy}>Buy ticket</div>
+        <div className="button" onClick={handleShowModal}>Buy ticket</div>
     </div>
         </div>
         
@@ -33,6 +33,6 @@ export const MovieSession = ({session}) => {
             </div>
         </div>
     </div>
-    {showModal && <ModalBuyTicket session={session} />}
+    {showModal && <ModalBuyTicket session={session} handleCloseModal={handleShowModal}/>}
     </React.Fragment>
 )};

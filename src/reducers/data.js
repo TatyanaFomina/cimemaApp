@@ -52,29 +52,7 @@ export const data = (state = initialValues, action) => {
           
                     return acc;
                 }, []);
-
-    //             const newArr2 = newArr.map(item => {
-    //                 return item.reduce((acc, elem) => {
-    //                     if(!acc.length) {
-    //                         return [[elem]];
-    //                     }
-    //                 const hasSameMovie = acc.some(movieArr => movieArr.some(obj => obj.movie === elem.movie));
-    //                 if(hasSameMovie) {
-    //                     const re = acc.map(movieArr => {
-    //                         const hasSameMovie = movieArr.some(obj => obj.movie === elem.movie);
-                    
-    //                 if (hasSameMovie) {
-    //                     return [...movieArr,elem];
-    //                 }
-    //                 return movieArr; 
-    //             });
-    //             return re;
-    //         } else {
-    //             return [...acc, [elem]];
-    //         }
-    //     }, []);
-    // });
-                    
+                 
                     return {
                         ...state,
                         sessions: newArr,

@@ -1,20 +1,44 @@
 .modal-control {
-    position: absolute;
-    background-color: rgba(80, 114, 80, 0.7);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: black;
-   
+  position: absolute;
+  background-color: rgba(80, 114, 80, 0.7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: black;
 }
 
 .modal-content {
-    background-color: rgb(247, 238, 238);
-    width: 400px;
-    margin: calc(100vh - 20px) auto;
-    padding: 100px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  background-color: rgb(247, 238, 238);
+  width: 800px;
+  margin: calc(100vh - 20px) auto;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.row-number,
+.place {
+  padding: 20px 15px;
+}
+
+.place.free {
+  background-color: rgba(164, 224, 73, 0.5);
+  margin: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.place.booked {
+  background-color: rgba(224, 103, 73, 0.5);
+  margin: 3px;
+  border-radius: 10px;
+  cursor: default;
 }
