@@ -14,10 +14,19 @@
   width: 800px;
   margin: calc(100vh - 20px) auto;
   padding: 100px 0;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-name: animatetop;
+  animation-duration: 0.4s
 }
+
+@keyframes animatetop {
+  from {top: -100px; opacity: 0}
+  to {top: 100px; opacity: 1}
+}
+
 
 .row {
   display: flex;
@@ -34,6 +43,15 @@
   margin: 3px;
   border-radius: 10px;
   cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.place.free:hover {
+  border: 1px solid #0eb493;
+}
+
+.place.free:focus {
+  border: 1px solid #0eb493;
 }
 
 .place.booked {
@@ -41,4 +59,8 @@
   margin: 3px;
   border-radius: 10px;
   cursor: default;
+}
+
+.card-films {
+  position: relative;
 }

@@ -4,12 +4,8 @@ import {MovieList} from '../MovieList';
 import {Filter} from '../Filter';
 
 
-const MainPage = ({movies, genres, isLoading}) => {
+const MainPage = ({movies, genres}) => {
     const [filteredMovies, setFilteredMovies] = useState([]);
-
-    if(isLoading) {
-        return <div className="loader"></div>
-    }
 
     return (<div className="grid">
         <Filter movies={movies} genres={genres} setFilteredMovies={setFilteredMovies} />
@@ -21,7 +17,6 @@ const MainPage = ({movies, genres, isLoading}) => {
 const mapToStateProps = (state) => ({
     movies: state.data.movies,
     genres: state.data.genres,
-    isLoading: state.loading.isLoading,
 });
 
 export const MainPageContainer = connect(mapToStateProps)(MainPage);

@@ -10,8 +10,6 @@ export const loadingFail = () => ({type: LOADING_FAIL});
 
 export const getSessions = () => {
     return dispatch => {
-        dispatch(isLoading());
-
         Promise.all([axios.get(URL_SCHEDULE), axios.get(URL_ROOMS)])
             .then(([sessions, rooms])=> {
             dispatch(setSessions(sessions.data.session));

@@ -1,0 +1,26 @@
+.image-border-sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #898989;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.user-pic {
+  font-size: 20px;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+}
+
+

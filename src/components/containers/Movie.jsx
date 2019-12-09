@@ -33,9 +33,9 @@ class Movie extends React.Component {
                <h2 className="section-film-title">{movie.title}</h2>
                <div className="grid">
                <div className="grid-item left-card width-1-2">
-               <div>
+               <figure className="card-image">
                    <img src={movie.poster} alt="poster" className="card-poster"/>
-                   </div>
+                </figure>
                   <div className="button-controller">
                        <button className="button">Buy ticket</button>
                   </div>

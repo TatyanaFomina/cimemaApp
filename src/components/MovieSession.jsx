@@ -15,10 +15,14 @@ export const MovieSession = ({session}) => {
     <React.Fragment>
     <div className="grid card-films">
         <div className="grid-item left-card width-1-3">
-        <div>
-        <img src={session.movie.poster} alt="poster" className="card-poster"/>
-        <div className="button" onClick={handleShowModal}>Buy ticket</div>
-    </div>
+        <div className="card-top">
+            <figure className="image-container">
+                <img src={session.movie.poster} alt="poster" className="card-poster"/>
+            </figure>
+            <div className="button-controller">
+                <div className="button" onClick={handleShowModal}>Buy ticket</div>
+            </div>
+        </div>
         </div>
         
         <div className="grid-item right-card width-2-3">

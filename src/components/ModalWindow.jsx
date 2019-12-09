@@ -5,6 +5,7 @@ import {ModalContent} from './ModalContent';
 export class ModalBuyTicket extends React.Component {
     root = document.createElement("div");
     body  = document.querySelector("body");
+    
     componentDidMount() {
         this.body.appendChild(this.root);
     }

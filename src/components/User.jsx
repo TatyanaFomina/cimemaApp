@@ -1,5 +1,9 @@
 import React from 'react';
+import '../assets/style/user.css';
 
 export const UserCard =()=>(
-    <div>UserIcon</div>
+    
+    <div className="user-container">
+        <div className="user-pic image-border-sm"><i className="icon-friends" aria-hidden="true"></i></div>
+    </div>
 );

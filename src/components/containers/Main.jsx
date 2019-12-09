@@ -17,6 +17,11 @@ class Main extends React.Component {
     }
 
     render() {
+        const {isLoading} = this.props;
+        
+        if(isLoading) {
+            return <div className="loader"></div>
+        }
         return (
             <main>
                 <section className="section-main">
@@ -34,12 +39,14 @@ class Main extends React.Component {
 }
 
 
+const mapStateToProps = (state) => ({
+    isLoading: state.loading.isLoading,
+});
+
 const mapDispatchToProps ={
     getMovies
 };
 
 
-
-
-export const MainContainer = connect(null,mapDispatchToProps)(Main);
+export const MainContainer = connect(mapStateToProps,mapDispatchToProps)(Main);
 
